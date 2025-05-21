@@ -7,7 +7,7 @@
     "start": "node server.js"
   },
   "keywords": [],
-  "author": "",
+  "author": "Luffy-Strike",
   "license": "ISC",
-  "description": ""
+  "description": "Дипломный проект для 'Хекслет' колледжа"
 }
