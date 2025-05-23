@@ -2,18 +2,67 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8" />
-  <title>Соревнования города</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>СпортГород</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <h1>Соревнования города</h1>
-  <p>Присоединяйтесь к нашим спортивным мероприятиям!</p>
 
-  <form id="registration-form">
-    <input type="text" placeholder="Ваше имя" required />
-    <input type="email" placeholder="Email" required />
-    <button type="submit">Зарегистрироваться</button>
-  </form>
+  <!-- Шапка -->
+  <header class="header">
+    <div class="logo">🏆 СпортГород</div>
+    <nav class="nav">
+      <a href="#events">Соревнования</a>
+      <a href="#register">Регистрация</a>
+      <a href="#contacts">Контакты</a>
+    </nav>
+  </header>
+
+  <!-- Приветствие -->
+  <section class="hero">
+    <h1>Присоединяйтесь к городским спортивным соревнованиям!</h1>
+    <p>Будьте в форме, участвуйте в турнирах и побеждайте вместе с нами.</p>
+    <a href="#register" class="btn">Зарегистрироваться</a>
+  </section>
+
+  <!-- Соревнования -->
+  <section id="events" class="events">
+    <h2>Предстоящие события</h2>
+    <div class="event-list">
+      <div class="event-card">
+        <h3>Марафон "Здоровье"</h3>
+        <p>Дата: 15 июня 2025 г.</p>
+        <p>Локация: Центральный парк</p>
+      </div>
+      <div class="event-card">
+        <h3>Чемпионат по футболу</h3>
+        <p>Дата: 22 июня 2025 г.</p>
+        <p>Локация: Стадион "Дружба"</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Форма регистрации -->
+  <section id="register" class="register">
+    <h2>Регистрация на соревнование</h2>
+    <form id="registration-form">
+      <input type="text" placeholder="Имя" required />
+      <input type="email" placeholder="Email" required />
+      <select required>
+        <option value="">Выберите событие</option>
+        <option value="marathon">Марафон "Здоровье"</option>
+        <option value="football">Чемпионат по футболу</option>
+      </select>
+      <button type="submit" class="btn">Отправить заявку</button>
+      <p id="success-message" class="success hidden">Вы успешно зарегистрированы!</p>
+    </form>
+  </section>
+
+  <!-- Подвал -->
+  <footer id="contacts" class="footer">
+    <p>&copy; 2025 СпортГород. Все права защищены.</p>
+    <p>Свяжитесь с нами: sportgorod@example.com</p>
+  </footer>
 
   <script src="script.js"></script>
 </body>
